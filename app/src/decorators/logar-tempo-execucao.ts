@@ -3,7 +3,7 @@ export function logarTempoExecucao(emSegundos: boolean = false) {
         target: any,
         propertyKey: string,
         descriptor: PropertyDescriptor
-    ) {
+    ){
         const metodoOriginal = descriptor.value;
         descriptor.value = function(...args: Array<any>){
             let divisor = 1;
